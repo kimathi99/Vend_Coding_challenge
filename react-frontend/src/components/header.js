@@ -51,6 +51,15 @@ export const Navbar = () => {
             Changepassword
           </NavLink>
         </li>
+        {!auth.user && (
+          <>
+            <li>
+              <NavLink style={NavLinkStyles} to="/register">
+                Register
+              </NavLink>
+            </li>
+          </>
+        )}
         
         {!auth.user && (
           <>

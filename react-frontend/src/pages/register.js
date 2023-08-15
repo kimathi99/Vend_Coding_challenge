@@ -283,7 +283,7 @@ function Register() {
       >
         {' © '}
         <Link color="inherit" href="#">
-          Powered by ICT Authority
+          Powered by Vend
         </Link>{' '}
         {new Date().getFullYear()}
         {'.'}

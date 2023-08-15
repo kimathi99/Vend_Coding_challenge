@@ -44,9 +44,7 @@ class TokenObtainPairSerializer(serializers.Serializer):
             'refresh': str(refresh),
             'access': str(access),
             'id': str(user.username),
-            'customer': str(user.is_customer),
-            'merchant': str(user.is_merchant),
-            'admin': str(user.is_admin),
+            
         }
 
         return data

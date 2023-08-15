@@ -109,7 +109,6 @@ function Login() {
         } else if (response.status === 200) {
           return response.json().then((data) => {
             setAuthTokens(data);
-            handleModalClose();
             setUser(jwt_decode(data.access));
             localStorage.setItem('authTokens', JSON.stringify(data));
             setMessage(messageToSnackbar);
