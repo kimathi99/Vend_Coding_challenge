@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django.contrib.auth.admin import UserAdmin
-from .models import Account
+from .models import Account,Test,Profile
 
 admin.site.site_header = 'Vend'
 admin.site.site_title = 'Vend'
@@ -42,3 +42,5 @@ class AccountAdmin(BaseAccountAdmin):
  
 
 admin.site.register(Account, AccountAdmin)
+admin.site.register(Test)
+admin.site.register(Profile)

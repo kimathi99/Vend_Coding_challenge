@@ -40,3 +40,13 @@ class Account(AbstractBaseUser, PermissionsMixin):
 
     def __str__(self):
         return f'{self.email} {self.username}'
+
+class Test(models.Model):
+    name=models.CharField(max_length=20)
+
+class Profile(models.Model):
+    owner=models.ForeignKey(Account,on_delete=models.CASCADE)
+    decsription=models.CharField(max_length=32)
+    # test=models.ForeignKey(Test,on_delete=models.CASCADE ,default=1)
+
+
